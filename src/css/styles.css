@@ -10,8 +10,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   transition: color 150ms var(--timing-function),
     background-color 150ms var(--timing-function);
 }
@@ -197,6 +197,12 @@ body.dark-theme {
   border-radius: 2px;
   background-color: #3f51b5;
   color: #fff;
+}
+
+.tag-list__item:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.15);
+  background-color: #293ba0;
 }
 
 .button {

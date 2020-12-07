@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/AlexBelozertsev/myFirstWebpack/issues"
   },
-  "homepage": "https://github.com/AlexBelozertsev/myFirstWebpack#readme",
+  "homepage": "https://alexbelozertsev.github.io/goit-js-hw-10-food-service/",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-class-properties": "^7.12.1",

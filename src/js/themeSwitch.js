@@ -1,24 +1,24 @@
-const themeSwitchTougle = document.getElementById('theme-switch-toggle');
+const themeSwitcher = document.getElementById('theme-switch-toggle');
 const body = document.querySelector('body');
-const Theme = {
+const theme = {
     LIGHT: 'light-theme',
     DARK: 'dark-theme',
 };
-body.classList.add(Theme.LIGHT);
+
+body.classList.add(theme.LIGHT);
 saveTheme();
 
-themeSwitchTougle.addEventListener('change', onToggle);
+themeSwitcher.addEventListener('change', onToggle);
 
 function onToggle(e) {
-    body.classList.toggle(Theme.DARK);
+    body.classList.toggle(theme.DARK);
     localStorage.setItem('themeDARK', e.target.checked);
 };
-
 function saveTheme() {
   const savedToggle = localStorage.getItem('themeDARK');
 
   if (savedToggle === 'true') {
-      body.classList.toggle(Theme.DARK);
-      themeSwitchTougle.checked = true;
+      body.classList.toggle(theme.DARK);
+      themeSwitcher.checked = true;
   }
-}
+};
