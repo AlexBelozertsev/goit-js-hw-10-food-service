@@ -199,7 +199,8 @@ body.dark-theme {
   color: #fff;
 }
 
-.tag-list__item:hover {
+.tag-list__item:hover,
+.tag-list__item:focus {
   cursor: pointer;
   box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.15);
   background-color: #293ba0;
@@ -230,4 +231,11 @@ body.dark-theme {
 
 .button__icon {
   margin-right: 8px;
+}
+
+/* filter */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
